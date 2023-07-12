@@ -27,8 +27,8 @@ app.listen(process.env.PORT, () => {
 });
 
 app.use("/api", userRouter);
-app.use("/api", ItemRouter);
-app.use("/api", customerRouter);
-app.use("/api", salesRouter);
-app.use("/api", purchaseRouter);
+app.use("/api",isAuthenticated, ItemRouter);
+app.use("/api",isAuthenticated, customerRouter);
+app.use("/api",isAuthenticated, salesRouter);
+app.use("/api",isAuthenticated, purchaseRouter);
 
