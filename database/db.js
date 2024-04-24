@@ -7,7 +7,7 @@ export function dbConnnection() {
   };
   try {
     mongoose.connect(
-      "mongodb+srv://sarathkumartk98:z5Zcg0CPUOtktvr9@cluster0.ao98qkc.mongodb.net/?retryWrites=true&w=majority",
+      "mongodb://sarath:9865713966@docdb-2024-04-24-10-41-30.cluster-cfmisyy248e7.us-east-1.docdb.amazonaws.com:27017/?tls=true&tlsCAFile=global-bundle.pem&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false",
       params
     );
     console.log("Database connected successfully");
